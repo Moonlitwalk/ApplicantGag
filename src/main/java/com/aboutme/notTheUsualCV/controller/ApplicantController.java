@@ -12,10 +12,7 @@ import java.awt.*;
 
 public class ApplicantController {
 
-    @GetMapping(
-            value="/api/mats",
-            produces = MediaType.APPLICATION_JSON_VALUE
-    )
+    @GetMapping("/api/mats")
     public ApplicantResponse getApplicant(){
         return new ApplicantResponse(
                 "Mats Arras",
